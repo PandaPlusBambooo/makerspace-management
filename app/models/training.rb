@@ -29,10 +29,10 @@ class Training < ApplicationRecord
       "info"
     when 'Electronics'
       "success"
-    when "Paperwork"
-      "danger"
     when "Metalworking"
       "default"
+    when "Paperwork"
+      "danger"
     when "Other"
       "default"
 
