@@ -11,7 +11,7 @@
 #
 
 class Training < ApplicationRecord
-  TRAINING_TYPES = ['Paperwork','Woodworking','3D Printing','Crafting','Electronics','Other']
+  TRAINING_TYPES = ['Paperwork','Woodworking','3D Printing','Crafting','Electronics','Metalworking','Other']
 
   has_many :user_trainings
   has_many :users, :through => :user_trainings
@@ -31,6 +31,8 @@ class Training < ApplicationRecord
       "success"
     when "Paperwork"
       "danger"
+    when "Metalworking"
+      "default"
     when "Other"
       "default"
 
